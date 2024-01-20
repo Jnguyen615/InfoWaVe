@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<MainPage />} />
+        <Route exact path="/" element={<MainPage articles={articles}/>} />
         <Route exact path="*" element={<ErrorPage />} />
       </Routes>
     </div>
