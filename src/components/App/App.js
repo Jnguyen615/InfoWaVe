@@ -1,11 +1,33 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from '../MainPage/MainPage';
+import ErrorPage from '../ErrorPage/ErrorPage';
+import { useState, useEffect } from 'react';
+import { getAllArticles } from '../../apicalls';
 
-function App() {
+const App = () => {
+  const [articles, setArticles] = useState([]);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    getAllArticles()
+      .then((data) => {
+        setArticles(data.articles); 
+        console.log('articles:', data.articles); 
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  }, []);
+
   return (
     <div className="App">
-      <h1>InfoWaVE</h1>
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+        <Route exact path="*" element={<ErrorPage />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
