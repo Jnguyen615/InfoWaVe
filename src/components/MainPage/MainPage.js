@@ -1,9 +1,10 @@
 import './MainPage.scss';
+import Header from '../Header/Header'
 
 const MainPage = () => {
   return (
     <main className="main-page">
-      <h1>InfoWaVe</h1>
+     <Header /> 
     </main>
   );
 };

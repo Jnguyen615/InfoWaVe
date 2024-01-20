@@ -1,14 +1,25 @@
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
-import ErrorPage from '../ErrorPage/ErrorPage'
+import ErrorPage from '../ErrorPage/ErrorPage';
+import { useState, useEffect } from 'react';
+import { getAllArticles } from '../../apicalls';
 
-function App() {
+const App = () => {
+  const [articles, setArticles] = useState([]);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    getAllArticles()
+      .then((data) => {
+        setArticles(data.articles); 
+        console.log('articles:', data.articles); 
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  }, []);
+
   return (
     <div className="App">
       <Routes>
@@ -17,11 +28,6 @@ function App() {
       </Routes>
     </div>
   );
-  // return (
-  //   <div className="App">
-  //     <MainPage />
-  //   </div>
-  // );
-}
+};
 
 export default App;
