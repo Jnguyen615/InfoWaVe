@@ -8,6 +8,7 @@ import { getAllArticles } from '../../apicalls';
 const App = () => {
   const [articles, setArticles] = useState([]);
   const [error, setError] = useState('');
+  const [filteredNews, setFilteredNews] = useState([])
 
   useEffect(() => {
     getAllArticles()
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<MainPage articles={articles}/>} />
+        <Route exact path="/" element={<MainPage articles={articles} setFilteredNews={setFilteredNews}/>} />
         <Route exact path="*" element={<ErrorPage />} />
       </Routes>
     </div>
