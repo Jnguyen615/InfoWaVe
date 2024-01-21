@@ -15,7 +15,7 @@ const ArticleContainer = ( {articles} ) => {
 
 
   const articleCards = articles.map((article, index) => {
-    const { id, title, urlToImage, description, publishedAt } = article;
+    const { id, title, urlToImage, description, publishedAt, content, author, url} = article;
 
     return (
       <NewsCard
@@ -25,6 +25,9 @@ const ArticleContainer = ( {articles} ) => {
         image={urlToImage}
         description={description}
         date={publishedAt}
+        content={content}
+        author={author}
+        url={url}
       />
     );
   });

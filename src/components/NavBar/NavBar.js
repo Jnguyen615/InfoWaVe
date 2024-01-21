@@ -15,7 +15,6 @@ const NavBar = () => {
           value={searchTerm}
           readOnly
         />
-        <button className="home-btn">Home</button>
       </div>
     </div>
   );
