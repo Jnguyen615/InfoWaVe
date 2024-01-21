@@ -1,0 +1,20 @@
+.scroll-follow-button {
+  background-color: #2b216e;
+  color: silver;
+  border-radius: 15px;
+  height: 5%;
+  width: 15%;
+  font-size: 1.5em;
+  font-family: 'Orbitron', 'sans-serif';
+  margin-top: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.scroll-follow-button.visible {
+  opacity: 1;
+}
