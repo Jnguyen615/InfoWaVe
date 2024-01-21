@@ -1,0 +1,21 @@
+.error-page {
+  background-image: url('../../Images/cosmic.png');
+  height: 100vh;
+}
+
+.error-page-text-container {
+  border: 1px solid #701573;
+  background-color: #701573;
+  border-radius: 20px;
+  top: 50%
+}
+
+.back-button {
+  background-color: #2b216e;
+  color: silver;
+  border-radius: 15px;
+  height: 5%;
+  width: 15%;
+  font-size: 1.5em;
+  margin-top: 20px
+}
