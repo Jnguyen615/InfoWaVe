@@ -21,8 +21,6 @@ const NewsCard = ({ index, title, image, description, date, content, author, url
         <div className="article-card-info">
           <p className="article-card-title">{title}</p>
           <p className="article-card-description">{description}</p>
-          {/* You can add more content here if needed */}
-          {/* <p className="article-card-content">{content}</p> */}
           <p className='article-card-author'>Author: {author}</p>
           <p className="article-card-date">
             {new Date(date).toLocaleDateString('en-US', {

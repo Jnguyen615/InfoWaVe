@@ -7,18 +7,15 @@
 
 .no-articles-message {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.no-articles-user {
+.no-articles-user-message {
   text-align: center;
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 2rem;
+  color: white;
 }
-
-/* Styles for NewsCard (assuming it uses the .card class) */
 
 .card {
   background-color: #fff;
@@ -29,6 +26,9 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+  &:nth-child(even) {
+    background-color: #191244;
   }
 }
 
