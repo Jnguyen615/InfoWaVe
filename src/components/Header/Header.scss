@@ -5,5 +5,15 @@ h1, p {
 }
 
 h1 {
-  font-size: 4em
+  font-size: 4em;
+  margin-top: 0
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 2em;
+  }
+  .app-description {
+    font-size: .5em;
+  }
 }
