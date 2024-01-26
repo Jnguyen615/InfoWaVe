@@ -1,4 +1,4 @@
-import './Modal.scss';
+import './modal.scss';
 
 const Modal = ({
   isOpen,
