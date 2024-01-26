@@ -2,7 +2,7 @@ export const getAllArticles = async () => {
 
   try {
     const response = await fetch(
-      "https://newsapi.org/v2/everything?domains=techcrunch.com&apiKey=424d6e3559094d06ac1ddd7bf48eaab3"
+      "http://newsapi.org/v2/everything?domains=techcrunch.com&apiKey=424d6e3559094d06ac1ddd7bf48eaab3"
     );
 
     if (!response.ok) {
