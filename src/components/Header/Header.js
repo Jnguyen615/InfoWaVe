@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <h1>InfoWaVe</h1>
-      <p>The place for Tech News!</p>
+      <p className='app-description'>The place for Tech News!</p>
     </header>
   )
 }

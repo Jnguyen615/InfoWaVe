@@ -1,4 +1,3 @@
-import React from 'react';
 import './Modal.scss';
 
 const Modal = ({
@@ -8,7 +7,6 @@ const Modal = ({
   image,
   content,
   date,
-  author,
   url,
 }) => {
   if (!isOpen) {
@@ -25,7 +23,6 @@ const Modal = ({
         <img src={image} className="modal-image" alt={title} />
         <div className="modal-info">
           <p className="modal-content">{content}</p>
-          <p className="modal-author">{author}</p>
           <p className="modal-date">{new Date(date).toLocaleDateString()}</p>
           <a
             href={url}
