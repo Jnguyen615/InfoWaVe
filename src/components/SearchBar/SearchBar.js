@@ -1,12 +1,12 @@
 import './SearchBar.scss';
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-const SearchBar = ( { onSearch, setSearchTerm, searchTerm }) => {
+const SearchBar = ({ onSearch, setSearchTerm, searchTerm }) => {
+  const handleSearchChange = event => {
+    setSearchTerm(event.target.value);
+    onSearch(event.target.value);
+  };
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value)
-    onSearch(event.target.value)
-  }
   return (
     <div className="nav-bar">
       <div className="search">
@@ -24,3 +24,9 @@ const SearchBar = ( { onSearch, setSearchTerm, searchTerm }) => {
 };
 
 export default SearchBar;
+
+SearchBar.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+  setSearchTerm: PropTypes.func.isRequired,
+  searchTerm: PropTypes.string.isRequired,
+};

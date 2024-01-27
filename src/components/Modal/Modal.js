@@ -1,14 +1,7 @@
 import './modal.scss';
+import PropTypes from 'prop-types';
 
-const Modal = ({
-  isOpen,
-  closeModal,
-  title,
-  image,
-  content,
-  date,
-  url,
-}) => {
+const Modal = ({ isOpen, closeModal, title, image, content, date, url }) => {
   if (!isOpen) {
     return null;
   }
@@ -39,3 +32,14 @@ const Modal = ({
 };
 
 export default Modal;
+
+Modal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  date: PropTypes.oneOfType([PropTypes.instanceOf(Date), PropTypes.string])
+    .isRequired,
+  url: PropTypes.string.isRequired,
+};

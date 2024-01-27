@@ -6,7 +6,8 @@ const ScrollButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       setIsVisible(scrollTop > 0);
     };
 
@@ -22,7 +23,7 @@ const ScrollButton = () => {
 
   return (
     <button
-      className={`scroll-follow-button ${isVisible ? 'visible' : 'hidden'}`} 
+      className={`scroll-follow-button ${isVisible ? 'visible' : 'hidden'}`}
       onClick={scrollToTop}
     >
       Top
