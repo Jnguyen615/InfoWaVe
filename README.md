@@ -47,7 +47,8 @@ _In planning for this application I spent time looking for design ideas and did 
 <img width="601" alt="Screenshot 2024-01-26 at 8 33 43 PM" src="https://github.com/Jnguyen615/InfoWaVe/assets/119434450/4279d29c-2116-49fe-88d4-577c53954d07">
 
 <h2  id="preview"> 🎥 Preview 📱 </h2>
-<div style="width:100%;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/DS6cTF5WwUYM0zVV38" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/infowave-DS6cTF5WwUYM0zVV38">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/DS6cTF5WwUYM0zVV38" width="480" height="262" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/infowave-DS6cTF5WwUYM0zVV38">via GIPHY</a></p>
+
 <h2 id="challenges">💪🏻 Challenges </h2>
 
 
