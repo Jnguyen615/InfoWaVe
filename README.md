@@ -48,7 +48,7 @@ _In planning for this application I spent time looking for design ideas and did 
 
 <h2  id="preview"> 🎥 Preview 📱 </h2>
 
-<iframe src="https://giphy.com/embed/DS6cTF5WwUYM0zVV38" width="480" height="262" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/infowave-DS6cTF5WwUYM0zVV38">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXFlbnZuYWZzbXlvb3Y5eHp3ODk2enRqc2FyZXlwNTE2OWV5MDJycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DS6cTF5WwUYM0zVV38/giphy.gif" alt="Infowave newsreader gif">
 
 <h2 id="challenges">💪🏻 Challenges </h2>
 
